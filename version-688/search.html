@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<title>站内搜索-高清影视片库</title>
+<meta name="description" content="搜索全站影片内容。分类内容持续更新页面按影视类型整理内容，覆盖电影、电视剧、影片和视频片库。">
+<meta name="keywords" content="搜索,分类内容持续更新,高清影视片库,精选内容,影视分类,影片片库,在线观看">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/hls.global.js"></script>
+<script defer src="assets/movies-index.js"></script>
+<script defer src="assets/app.js"></script>
+
+</head>
+<body class="page-search">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="高清影视片库">
+      <span class="brand-mark">▶</span>
+      <span>
+        <strong>高清影视片库</strong>
+        <small>分类内容持续更新页面按影视类型整理内容，覆盖电影、电视剧、影片和视频片库。</small>
+      </span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="展开菜单" data-menu-toggle>☰</button>
+    <nav class="site-nav" data-nav>
+      <a class="nav-link " href="index.html">首页</a><a class="nav-link " href="categories.html">分类导航</a><a class="nav-link " href="ranking.html">排行榜</a><a class="nav-link active" href="search.html">站内搜索</a>
+    </nav>
+  </div>
+</header>
+<main class="container page-main">
+  <section class="page-hero compact">
+    <span class="hero-pill">站内搜索 · 可实时筛选</span>
+    <h1>搜索影片</h1>
+    <p>输入片名、地区、题材或标签，系统会从 2000 条记录中即时筛选。</p>
+    <form class="hero-search narrow" action="search.html" method="get">
+      <input id="searchInput" type="search" name="q" placeholder="输入关键词后回车">
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section>
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">搜索结果</span>
+        <h2 id="searchTitle">等待关键词</h2>
+      </div>
+      <div class="result-count" id="searchCount">0 条</div>
+    </div>
+    <div class="movie-grid search-grid" id="searchResults"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>高清影视片库</h3>
+      <p>分类内容持续更新页面按影视类型整理内容，覆盖电影、电视剧、影片和视频片库。</p>
+    </div>
+    <div>
+      <h4>站点信息</h4>
+      <p>影片总数：2000 部</p>
+      <p>分类专题：8 个</p>
+    </div>
+    <div>
+      <h4>快捷入口</h4>
+      <p><a href="categories.html">分类导航</a></p>
+      <p><a href="ranking.html">热度排行榜</a></p>
+      <p><a href="search.html">站内搜索</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+window.__SEARCH_PAGE__ = true;
+</script>
+</body>
+</html>

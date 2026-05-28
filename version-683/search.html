@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>站内搜索-热播剧集大全</title>
+  <meta name="description" content="支持按标题、地区、类型、标签和简介进行全站静态搜索，并可按栏目筛选。">
+  <meta name="keywords" content="站内搜索,热播剧集大全,影视搜索,分类筛选">
+  <meta name="theme-color" content="#f97316">
+  <link rel="canonical" href="./search.html">
+  <link rel="stylesheet" href="./assets/site.css">
+  <script type="module" src="./assets/site.mjs"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container inner">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">
+<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M5 5.8C5 4.81 5.82 4 6.82 4h10.36C18.18 4 19 4.81 19 5.8v12.4c0 .99-.82 1.8-1.82 1.8H6.82A1.82 1.82 0 0 1 5 18.2V5.8Z" fill="white" fill-opacity=".15"/>
+  <path d="M9 8.2v7.6l6-3.8-6-3.8Z" fill="white"/>
+</svg>
+</span>
+      <span>热播剧集大全</span>
+    </a>
+    <div class="header-actions">
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="打开菜单">☰</button>
+    </div>
+    <nav class="nav" data-site-nav>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行</a>
+      <a href="./search.html">搜索</a>
+      <a href="./browse-001.html">全量浏览</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h1 class="section-title">站内搜索</h1>
+        <div class="section-subtitle">输入标题、地区、类型、标签或剧情关键词即可检索全部 2000 条内容。</div>
+      </div>
+      <a class="section-link" href="./browse-001.html">前往全量浏览 →</a>
+    </div>
+
+    <div class="toolbar">
+      <div class="searchbox" style="flex:1;">
+        <input data-search-input type="search" placeholder="搜索影片标题、地区、类型、标签、剧情">
+        <button class="btn btn-primary" type="button" onclick="document.querySelector('[data-search-input]').dispatchEvent(new Event('input'))">刷新</button>
+      </div>
+      <div class="chips">
+        <button class="chip is-active" type="button" data-search-chip="all">全部</button>
+        <button class="chip" type="button" data-search-chip="new">新片</button>
+        <button class="chip" type="button" data-search-chip="movie">电影</button>
+        <button class="chip" type="button" data-search-chip="series">剧集</button>
+        <button class="chip" type="button" data-search-chip="animation">动画</button>
+        <button class="chip" type="button" data-search-chip="documentary">纪录片</button>
+        <button class="chip" type="button" data-search-chip="variety">综艺</button>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem;">
+      <div class="muted">结果数：<strong data-search-count>共 0 条</strong></div>
+      <div class="muted">默认显示全部内容，输入关键词后实时刷新。</div>
+    </div>
+
+    <div class="grid grid-4" data-search-results></div>
+    <div class="panel aside-card hidden" data-search-empty style="margin-top:1rem;">
+      没有找到匹配结果，请尝试其他关键词。
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="panel">
+      <strong>热播剧集大全</strong>
+      <p class="muted" style="margin:.45rem 0 0; line-height:1.8;">
+        这是一个纯静态影视目录站点，内容来源于上传的影片文本与样式素材；页面可直接收录，支持分类浏览、站内搜索、排行榜与详情页跳转。
+      </p>
+    </div>
+  </div>
+</footer>
+<button class="btn btn-primary" data-back-top style="position:fixed;right:1rem;bottom:1rem;z-index:60;box-shadow:var(--shadow);">
+  回到顶部
+</button>
+
+</body>
+</html>

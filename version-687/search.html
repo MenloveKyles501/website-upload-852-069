@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>搜索 - 亚洲热门视频</title>
+  <meta name="description" content="站内搜索页面。" />
+  <meta name="keywords" content="亚洲热门视频,亚洲视频,热门视频,视频片库,精选内容,持续更新" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">AHV</span>
+        <span class="brand-text">亚洲热门视频</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>☰</button>
+      <nav class="site-nav" data-nav>
+        <a class="nav-link" href="index.html">首页</a>
+<a class="nav-link" href="categories.html">分类总览</a>
+<a class="nav-link" href="rankings.html">排行榜</a>
+<a class="nav-link active" href="search.html">搜索</a>
+<a class="nav-link" href="category-cn.html">国产影视</a>
+<a class="nav-link" href="category-jp.html">日本影视</a>
+<a class="nav-link" href="category-kr.html">韩国影视</a>
+<a class="nav-link" href="category-west.html">欧美影视</a>
+<a class="nav-link" href="category-suspense.html">悬疑惊悚</a>
+<a class="nav-link" href="category-love.html">爱情剧情</a>
+<a class="nav-link" href="category-action.html">动作冒险</a>
+<a class="nav-link" href="category-animation.html">动画纪录</a>
+      </nav>
+      <form class="header-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片、地区、类型、标签" />
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </header>
+  <main>
+    
+    <section class="container page-head">
+      <div>
+        <div class="breadcrumb">首页 / 搜索</div>
+        <h1>全站搜索</h1>
+        <p>支持标题、地区、类型、年份和标签检索。</p>
+      </div>
+      <div class="search-panel">
+        <input id="searchInput" type="search" placeholder="输入关键词开始搜索" />
+        <button id="searchBtn" type="button">搜索</button>
+      </div>
+    </section>
+    <section class="container section-block">
+      <div class="section-head compact"><h2>搜索结果</h2><span id="resultCount">0</span></div>
+      <div class="tag-row filter-row">
+        <button class="filter-chip active" data-filter="全部">全部</button>
+        <button class="filter-chip" data-filter="国产">国产</button>
+        <button class="filter-chip" data-filter="日本">日本</button>
+        <button class="filter-chip" data-filter="韩国">韩国</button>
+        <button class="filter-chip" data-filter="美国">美国</button>
+        <button class="filter-chip" data-filter="悬疑">悬疑</button>
+        <button class="filter-chip" data-filter="爱情">爱情</button>
+        <button class="filter-chip" data-filter="动作">动作</button>
+      </div>
+      <div class="movie-grid grid-6" id="searchResults"></div>
+    </section>
+    <script src="assets/films-index.js"></script>
+    
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">亚洲热门视频</div>
+        <p>亚洲热门视频页面汇集高关注内容，覆盖多地区、多题材的视频分类与合集。</p>
+      </div>
+      <div>
+        <h4>快速入口</h4>
+        <a href="categories.html">分类总览</a>
+        <a href="rankings.html">排行榜</a>
+        <a href="search.html">搜索</a>
+      </div>
+      <div>
+        <h4>主题分类</h4>
+        <a href="category-cn.html">国产影视</a>
+        <a href="category-jp.html">日本影视</a>
+        <a href="category-kr.html">韩国影视</a>
+      </div>
+      <div>
+        <h4>更多分类</h4>
+        <a href="category-west.html">欧美影视</a>
+        <a href="category-suspense.html">悬疑惊悚</a>
+        <a href="category-action.html">动作冒险</a>
+      </div>
+    </div>
+    <div class="container footer-note">
+      <span>© 亚洲热门视频</span>
+      <span>静态页面 · 纯 HTML / CSS / JS</span>
+    </div>
+  </footer>
+  <script src="assets/hls.min.js"></script>
+  <script src="assets/app.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

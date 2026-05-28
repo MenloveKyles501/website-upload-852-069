@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>亚洲热映 · 搜索</title>
+<meta name="description" content="在 2000 部影片中按关键词检索电影、剧集与题材标签。">
+<meta name="keywords" content="亚洲热映,搜索影片,电影检索,题材筛选,地区分类">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<meta name="theme-color" content="#08111f">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0iI2Y1OWUwYiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZiNzE4NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE4IiBmaWxsPSJ1cmwoI2cpIi8+PHRleHQgeD0iMzIiIHk9IjM5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI2IiBmb250LWZhbWlseT0iQXJpYWwiIGZpbGw9IiNmZmYiIGZvbnQtd2VpZ2h0PSI3MDAiPuaYoDwvdGV4dD48L3N2Zz4=">
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/app.js"></script>
+</head>
+<body>
+<div class="site-shell">
+
+    <header class="header">
+      <div class="container header__bar">
+        <a href="index.html" class="brand" aria-label="亚洲热映">
+          <span class="brand__mark">映</span>
+          <span class="brand__text">
+            <strong>亚洲热映</strong>
+            <span>静态电影资料站</span>
+          </span>
+        </a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="展开导航">☰</button>
+        <nav class="nav" data-nav>
+          <a href="index.html" class="">首页</a><a href="category.html" class="">分类</a><a href="ranking.html" class="">排行榜</a><a href="search.html" class="is-active">搜索</a><a href="about.html" class="">关于平台</a>
+        </nav>
+        <div class="header__actions">
+          <form class="search-form" data-search-form action="search.html" method="get">
+            <input type="search" name="q" data-search-input placeholder="搜索影片、题材、地区、标签…">
+            <button type="submit">搜索</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    
+
+    <section class="hero" style="padding-bottom: 18px;" data-listing-page="true" data-default-sort="score" data-page-size="36">
+      <div class="container">
+        <div class="panel listing-bar">
+          <div class="listing-bar__row">
+            <div>
+              <span class="kicker">影片检索</span>
+              <h1 class="page-title" style="font-size: clamp(2rem, 3.2vw, 3.6rem); margin-top: 14px;">搜索影片</h1>
+              <p class="page-lead" style="margin-top: 12px;">输入关键词即可在全部影片中快速查找。</p>
+            </div>
+            <div class="results-meta" data-result-meta>浏览全部影片</div>
+          </div>
+          <div class="listing-bar__row">
+            <form class="search-form" data-search-form action="search.html" method="get" style="min-width:min(100%, 560px); flex: 1;">
+              <input type="search" name="q" data-search-input placeholder="搜索影片、题材、地区、标签…">
+              <button type="submit">搜索</button>
+            </form>
+          </div>
+          <div class="listing-bar__row">
+            <div class="filter-row">
+              <a class="chip" href="category.html" data-chip-key="region" data-chip-value="all">全部</a>
+              <a class="chip" href="category.html?region=国产" data-chip-key="region" data-chip-value="国产">国产</a><a class="chip" href="category.html?region=日韩" data-chip-key="region" data-chip-value="日韩">日韩</a><a class="chip" href="category.html?region=欧美" data-chip-key="region" data-chip-value="欧美">欧美</a><a class="chip" href="category.html?region=其他" data-chip-key="region" data-chip-value="其他">其他</a>
+            </div>
+            <div class="filter-row">
+              <a class="chip" href="category.html?genre=剧情" data-chip-key="genre" data-chip-value="剧情">剧情</a><a class="chip" href="category.html?genre=喜剧" data-chip-key="genre" data-chip-value="喜剧">喜剧</a><a class="chip" href="category.html?genre=悬疑" data-chip-key="genre" data-chip-value="悬疑">悬疑</a><a class="chip" href="category.html?genre=爱情" data-chip-key="genre" data-chip-value="爱情">爱情</a><a class="chip" href="category.html?genre=动作" data-chip-key="genre" data-chip-value="动作">动作</a><a class="chip" href="category.html?genre=恐怖" data-chip-key="genre" data-chip-value="恐怖">恐怖</a><a class="chip" href="category.html?genre=科幻" data-chip-key="genre" data-chip-value="科幻">科幻</a><a class="chip" href="category.html?genre=奇幻" data-chip-key="genre" data-chip-value="奇幻">奇幻</a>
+            </div>
+          </div>
+          <div class="listing-bar__row">
+            <label class="small">排序
+              <select class="select" name="sort" onchange="const params = new URLSearchParams(location.search); params.set('sort', this.value); location.search = '?' + params.toString();">
+                <option value="score">综合热度</option>
+                <option value="year_asc">按年份升序</option>
+                <option value="title">按标题</option>
+                <option value="region">按地区</option>
+              </select>
+            </label>
+            <div class="results-meta"><span data-result-count>共 0 部影片</span></div>
+          </div>
+        </div>
+
+        <div class="movie-grid" data-listing-grid style="min-height: 280px;"></div>
+
+        <div class="pagination" data-pagination></div>
+      </div>
+    </section>
+    
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <h4>亚洲热映</h4>
+          <p class="small">基于上传素材生成的纯静态电影网站，支持分类浏览、搜索检索、影片详情、HLS 播放与响应式展示。</p>
+        </div>
+        <div>
+          <h4>热门入口</h4>
+          <ul>
+            <li><a href="ranking.html">排行榜</a></li>
+            <li><a href="category.html?region=国产">国产精选</a></li>
+            <li><a href="category.html?region=日韩">日韩佳作</a></li>
+            <li><a href="category.html?region=欧美">欧美热映</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>使用说明</h4>
+          <ul>
+            <li>点击影片卡片进入详情页。</li>
+            <li>详情页播放器支持切换线路。</li>
+            <li>可按关键词、地区或题材筛选。</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+</div>
+<script src="assets/data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

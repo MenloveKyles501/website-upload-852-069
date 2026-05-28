@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>站内搜索-国产高清视频</title>
+  <meta name="description" content="搜索全部影片并快速进入详情页。">
+  <meta name="keywords" content="国产高清视频,高清视频片库,热门内容,持续更新,国产视频,视频分类,精选视频">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="站内搜索-国产高清视频">
+  <meta property="og:description" content="搜索全部影片并快速进入详情页。">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js" defer></script>
+  <script src="assets/site.js" defer></script>
+  
+</head>
+<body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">片</span>
+      <span class="brand-text"><span>国产高清视频</span><small>STATIC CINEMA</small></span>
+    </a>
+    <button class="btn ghost nav-toggle mobile-only" data-nav-toggle aria-label="打开导航">菜单</button>
+    <nav class="nav-links" data-nav-links>
+      <a class="" href="index.html">首页</a><a class="" href="categories.html">分类总览</a><a class="" href="ranking.html">热度榜</a><a class="active" href="search.html">站内搜索</a>
+    </nav>
+    <div class="header-actions">
+      <form class="searchbox" action="search.html" method="get">
+        <span>⌕</span>
+        <input type="search" name="q" placeholder="搜索影片、类型、标签...">
+      </form>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container panel">
+      <div>
+        <div class="kicker">站内搜索</div>
+        <h1 class="page-title">搜索全部 2000 部影片</h1>
+        <p class="page-sub">支持标题、地区、类型、标签和分类关键词检索，可直接跳转到详情页。</p>
+      </div>
+      <div class="pill" data-search-counter>加载中…</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container panel" data-search-app data-json="assets/movies-index.json">
+      <div class="filter-row">
+        <input data-search-input type="search" placeholder="输入标题、标签或地区..." value="">
+        <select data-search-genre>
+          <option value="">全部分类</option>
+          <option value="drama">剧情精选</option><option value="comedy">喜剧娱乐</option><option value="mystery">悬疑罪案</option><option value="romance">爱情情感</option><option value="action">动作冒险</option><option value="crime">犯罪惊悚</option><option value="family">家庭治愈</option><option value="fantasy">奇幻科幻</option>
+        </select>
+      </div>
+      <div style="height:16px"></div>
+      <div class="list-grid" data-search-result></div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand" style="margin-bottom:8px"><span class="brand-mark">片</span><span class="brand-text"><span>国产高清视频</span><small>STATIC ARCHIVE</small></span></div>
+      <div>国产高清视频栏目收录国产视频内容，按分类、热度和更新时间展示页面信息。</div>
+    </div>
+    <div>
+      <div><strong>站点关键词</strong></div>
+      <div style="max-width:56ch">国产高清视频,高清视频片库,热门内容,持续更新,国产视频,视频分类,精选视频</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
